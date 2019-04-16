@@ -13,7 +13,7 @@ Open your terminal.
 
 `$ cd` to your Scrivito project
 
-```
+```shell
 $ npm install scrivito-linechart
 ```
 
@@ -21,37 +21,22 @@ Import the widget in your javascript (e.g. in `index.js` or `Widgets/index.js`).
 
 Add this line to your index.js:
 
-```
+```js
 import "scrivito-linechart";
 ```
 
 ## Features
-You can choose between three Linechart types in the widget configuration form.
 
-## Development
+Linechart for normal, dashed or vertical lines..
 
-With `npm run build` you can build the package into `build/`.
+## Widget properties
 
-With `npm start` you'll start a continues process, that rebuilds `build/` automatically once the source code is changed.
+In the widget properties you can set:
 
-To add this library locally do the following in your scrivito app:
-
-```
-npm install file:<path to build folder>
-```
-
-e.g.
-
-```
-npm install file:../scrivito-linechart/build/
-```
-
-To publish the package:
-
-```
-npm i && npm run build && cd build/ && npm publish
-```
-
-## Check code quality
-
-With `npm run eslint` and `npm run es-check` you can check your coding quality.
+- Chart type
+- Labels for two comparable values e.g. Foo, Bar
+- Chart values
+  - Name e.g. 'January', 'February' ...
+  - Value (number) for 'January'
+  - Value (number) for 'February'
+  - ...
